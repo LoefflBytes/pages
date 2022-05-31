@@ -41,19 +41,18 @@
 
    @keyframes rain {
      from {
-       transform: rotate(105deg) translateX(0);
+       transform: rotate(100deg) translateX(0);
      } 
      to {
-       transform: rotate(105deg) translateX(calc(100vh + 20px));
+       transform: rotate(100deg) translateX(calc(100vh + 20px));
      }
    }
-
 
   </style>
 </head>
 
 <body>
-    <img src="A4D8E6B1.PNG" id="grillchef" alt="Grillchef">
+    <img src="A4D8E6B1.PNG" id="grillchef" alt="Grillchef" height=100%>
 </body> 
 <script type="text/javascript">
 
@@ -75,8 +74,8 @@ image.addEventListener('click', function() {
         for (let i = 0; i < counter; i++) {
             hrElement = document.createElement("HR");
     
-            hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-            hrElement.style.animationDuration = 0.5 + Math.random() * 0.3 + "s";
+            hrElement.style.left = Math.floor(Math.random() * window.innerWidth - 50) + "px";
+            hrElement.style.animationDuration = 0.8 + Math.random() + "s";
             hrElement.style.animationDelay = Math.random() * 5 + "s";
    
             document.body.appendChild(hrElement);
